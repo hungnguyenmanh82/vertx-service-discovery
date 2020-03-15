@@ -24,8 +24,13 @@ import io.vertx.servicediscovery.types.JDBCDataSource;
 import io.vertx.ext.jdbc.JDBCClient;
 
 /**
- * @author <a href="http://escoffier.me">Clement Escoffier</a>
- */
+MicroService Provider: là bên cung cấp service
+MicroService consumer: bên dùng service
+ServiceDiscover server: bên điều phối thông tin.
+Giả định kết nối qua internet (tcp or http or event bus).
+Các vd của vertx là trường hợp đặc biệt, tất cả đều trong 1 ứng dụng vertx (hoặc Vertx cluster).
+*/
+//vd Provider = SQL server
 public class JDBCDataSourceExamples {
 
   public void example1(ServiceDiscovery discovery) {
