@@ -62,7 +62,7 @@ public class KubernetesServiceImporter implements ServiceImporter {
   private ServicePublisher publisher;
   private String namespace;
   private List<Record> records = new CopyOnWriteArrayList<>();
-  private WebClient client;
+  private WebClient client; 
 
   private static final String OPENSHIFT_KUBERNETES_TOKEN_FILE = "/var/run/secrets/kubernetes.io/serviceaccount/token";
 
